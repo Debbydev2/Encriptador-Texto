@@ -1,0 +1,105 @@
+body {
+    font-family: 'Handjet', cursive;
+    background-color: #e0e7f3;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1 {
+    text-align:left;
+    color: #0e2677;
+    font-size: 70px;
+}
+
+.container {
+    height:95vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column; /* Los elementos se colocarán uno encima del otro */
+    align-items: center;
+    justify-content: center;
+}
+
+.textarea-container {
+    display: flex; 
+    width: 90%;
+    height: 80%;
+    margin-bottom: 20px;
+}
+
+#input-text {
+    width: 60%;
+    height: 100%;
+    font-family: 'Handjet', cursive;
+    font-size: 50px;
+    padding: 10px;
+    border: none;
+    
+    background-color: #dae2f1;
+    color: #0e2677;
+    resize: none;
+    margin-right: 50px;
+}
+
+#output-text {
+    font-family: 'Handjet', cursive;
+    width: 40%;
+    height: 100%;
+    font-size: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #0e2677;
+    resize: none;
+}
+
+#input-text::placeholder,#output-text::placeholder {
+   
+    color: #0e2677;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 20%;
+}
+
+#encrypt-btn, #copy-input-btn{
+    font-family: 'Handjet', cursive;
+    display: block;
+    margin: 5px;
+    padding: 10px 100px;
+    font-size: 20px;
+    background-color: #0f334b;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#decrypt-btn, #copy-output-btn{
+    font-family: 'Handjet', cursive;
+    display: block;
+    margin: 5px;
+    padding: 10px 100px;
+    font-size: 20px;
+    background-color: #acc5d6;
+    color: #26207e;
+    border: 1px solid #121086;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+    font-size: 12px;
+}
